@@ -1,6 +1,6 @@
 <?php
 //Função para conexão com o banco de dados.
-$conexao = mysqli_connect("localhost", "root", "", "aula1");
+$conexao = mysqli_connect("localhost", "root", "", "aula");
 
 //Verificando se a conexao foi bem sucedida.
 if ($conexao == false){
@@ -28,3 +28,9 @@ while ($registro = mysqli_fetch_array($resultado)) {
     echo "<br>";
     echo "<br>";
 }
+
+mysql_close($conexao);
+
+
+    
+    
